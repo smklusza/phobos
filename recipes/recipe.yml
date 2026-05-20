@@ -22,15 +22,10 @@ modules:
 
   - type: dnf
     repos:
-      files:
-        - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-      keys:
-        - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-        
     install:
       packages:
         - emacs
-        - nix
+        - waydroid
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
